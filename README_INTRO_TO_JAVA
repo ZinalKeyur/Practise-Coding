@@ -1,0 +1,115 @@
+Computer = Hardware + Software
+Hardware - Physical machine that follows instructions
+Software - Programs (codes) that is used to give instructions to Computer
+
+
+Bit -> 0 or 1
+Byte -> 8 bits 
+Computer memory = Main memory + Auxillary Memory
+
+Main Memory 														Aux Memory
+
+RAM = Random Access memory 											HARD DISK / CD / DVD
+Holds data or programs that are currently being manipulated  							Holds saved programs or data
+VOLATILE MEMORY 												PERMENANT MEMORY
+Data is thus formed from multiple bytes										Data is thus formed from multiple bytes
+Main memory location is usually group of adjacent bytes								Group of bytes when saved as a file falls in aux memory
+Thus 
+
+
+
+.
+.
+.
+3021  10101010    2 byte mem location at 3021
+3022  10010101
+3023  00100101    1 byte mem location at 3023
+3024  01001010    2 byte mem location at 3024
+3025  10100000
+.
+.
+.
+.
+
+
+Programs -> Codes that tells computer, which instructions to be followed
+Eg.: OS, notepad, Paint, cmd, compilers, interpreters everything is a program
+
+
+High level language -> understood by humans -> Java python C C++ Ruby -> Source code /  Source program
+Low Level language / machine language /  Assembly language -> Understood by particular machine you are running program on -> Object code / Object Program
+
+Compiler -> Translates from highlevel to lowlevel language before executing the code.
+	    compile once and execute often
+			
+Interpreter -> Translates and executes the codes in batches
+
+But than each new machine or each new coding language needs its own compiler/interpreter. Tedious, expensuve and time taking job.
+
+
+BUT i want to use 1 compiler for all types of computers ? 
+
+BYTECODE -> Java compiler translates highlevel language to a lowlevel language called bytecode, which is understood by most common computers or machines in market (hypotheitical computers 	    / virtual machines) 
+            Once compiled in bytecode, you can send your program over an internet to any other computer and it will execute if it has JVM
+	    JVM / Java virtual machine -> translates bytecode to low/machine level language.
+							  
+
+JAVA program = comsists of multiple Classes each with different methods
+Application = Regular program ran on your computer
+Applet = Little Application that can be sent over internet to another machine and ran anywhere. (Uses packages "Swing" and "awt", will understand more later)
+
+PACKAGE is library of classes (Eg. java.util)
+Java has inbuilt CLASSES that we can call. (Eg. import java.util.Scanner) Scanner being the class, Thi combination of readily available classes in Java are called " Java class library " OR " API " OR " Java Application Programming INterface ".
+Class contains methods
+Every class/application has a main method
+SOFTWARE OBJECTS -> System.out / System.in / keyboard -> These can invoke methods
+METHODS -> println(); / nextInt(); -> comes with an argument in parehtesis
+
+Eg.:
+Scanner.keyboard = new Scanner(System.in)
+n1 = keyboard.nextInt();
+
+
+
+You can write a code in notepad and save as .java (NOTE : the class name should be equal to your .java file name)
+command "javac hello.java" will compile and save your code as Hello.class
+Now to execute, command "java Hello" works.
+
+
+
+OOP
+Java, C, C++,Ruby, Python all are Object oriented programming languages.
+
+Software Objects -> Basically, Huge code is divided into small parts for simpler understanding, these piece of codes or programs are called objects.
+	            In older non OOP languages, consider Variables as Objects which holds data
+Attributes -> Objects consists of data called attributes
+State -> The value of these object attributes gives them a state.
+Behaviours -> These are like functions or methods that have standard set of action to be performed. 
+Class -> An Object which is blueprint to create objects.
+	 Thus all objects in 1 class have same attributes and behaviours. 
+
+(Eg.: Cars in traffic can be a class. Each car being an object, Their speed/horsepower/fuelcapacity being attribute, but the speed or fuel values will state us where would car be in next 10 mins)     
+=[;.
+
+OOP Design Principles
+Encapsulation - Packages the code and hides details. Basically hides the detail as to how a code works but gives informative details for another programmer to understand
+Polymorphism - One with many forms. Means 1 method can cause different actions depending on kind of object performing that action. 
+Inheritance - Organizing related classes. Define attributes and behaviours/functions once and use them in all classes.
+
+Algorithm -> It is detailed steps or set of direction to solve a problem, written in Pseudocode. Like SOP in real world.
+Pseudocode -> combination language of english and java which a user can understand.
+
+Bug -> A mistake in program/code
+debugging -> process to find and eliminate the mistake
+
+3 types of mistakes giving diff errors
+Syntax Error -> Gramatical mistake like punctuations (Semi-colons, brackets, etc)
+Run-time error -> Found when you run/compile the code. Eg.: trying to divide a number by zero, or trying to divide a string by a number and likewise.
+Logical error -> This will complete the execution without errors but output will be wrong. Eg.: You used + sign instead of - . 
+		 Thus you dont usually get any error prompt and hence toughest error to debug. Sometimes you dont know that your code is logically wrong.
+		 Hence always perform multiple test scenerios.
+
+
+
+MMIMP -> https://docs.oracle.com/javase/8/docs/api/
+Go through above API
