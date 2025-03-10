@@ -1,0 +1,12 @@
+var x = 65538;
+var k = 0;
+int power = 0;
+
+
+while ((2^k)<x){k = k+1};
+
+System.out.println(k-1);
+
+
+But i dont know what package or class to use here in java
+Javascript is easier instead

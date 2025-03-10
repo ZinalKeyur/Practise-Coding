@@ -1,0 +1,24 @@
+import java.util.Scanner
+
+public class TypeCast{
+
+public static void main (String[] args){
+
+Scanner keyboard = new Scanner(System.in);
+
+float x;
+int y;
+byte z;
+
+// byte->short->int->long->float->double     The left variables can be stored in right without any changes. But right to left need typecast.
+
+System.out.println("Enter a Floating point number ");
+x = keyboard.nextfloat();
+y = (int)x;
+y = (byte)z;
+
+System.out.println("Floating point number x = " +x);
+System.out.println("Respective int number y = " +y);
+System.out.println("Respective byte number z = " +z);
+}
+}

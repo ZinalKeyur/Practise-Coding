@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class EachDigit{
+	public static final double r = 7.49/12;
+	
+	public static void main (String[] args){
+			
+			Scanner keyboard = new Scanner(System.in);
+			
+			System.out.println (" Monthly Mortgage ?");
+			double morg = keyboard.nextDouble();
+			System.out.println (" Outstanding Amount ?");
+			double debt = keyboard.nextDouble();
+			
+			double sInt = intRate * morg;
+			double prin = morg - sInt;
+			
+			System.out.println(  " principle paid + Interest = " +prin+ " + " +sInt);
+			
+			}
+	
+}

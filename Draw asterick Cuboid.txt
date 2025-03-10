@@ -1,0 +1,15 @@
+public class Cuboid{
+public class void main(){
+
+system.out.println ("        *************");
+system.out.println ("       *           **");
+system.out.println ("      *           * *");
+system.out.println ("     *************  *");
+system.out.println ("     *           *  *");
+system.out.println ("     *           *  *");
+system.out.println ("     *           * * ");
+system.out.println ("     *           **  ");
+system.out.println ("     *************   ");
+
+}
+}
