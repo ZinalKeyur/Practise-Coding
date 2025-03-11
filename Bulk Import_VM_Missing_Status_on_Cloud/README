@@ -1,0 +1,14 @@
+#Sometimes VMs can go in Missing state on CLoud Portals like (VRA). This is because all necessary properties (key-value pairs) are not correctly updated after certain backend changes and they appear as unmanaged machines.
+#Get them Back on Available status. DONT DO IT MANUALLY FOR EACH SERVER WITH 100+ PROPERTIES EACH
+
+•	Export all Old missing VM in csv format, along with properties
+•	Primary Details to be collected - owner, IP, BusinessGroup, Servername in VRA, Compute resources, Storage path.
+• ->  Infrastructure - bulk imports, need to get unmanaged machine for given compute resources -> Generate csv file -> By resources - CR
+•	You should now have -> 
+•	-> Reservations -> Res -> res type -> VC, Compute resources -> with right VC
+•	-> Host reservation -> CP_BG (Dont take F5)
+•	-> Host to storage -> Storage Path
+•	-> Blueprint ID -> Desiign  -> BP --> got to ur catalog BP -> select sett -> get ID & catalog BP ID
+•	-> Owner -> give urself if you dont know original
+•	Prop name , value, VirtualMachine.Network0.DnsSuffix, cloud.zinal.org
+•	 add these network prop in first import.  ->VirtualMachine.Network0.Name -> 172.*.*.*
